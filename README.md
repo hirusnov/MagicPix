@@ -2,9 +2,11 @@
 
 > **Made by Hirus** | [Discord](https://discord.com/users/386072981799174144)
 
+[![Download MagicPix](https://img.shields.io/badge/⬇%EF%B8%8F%20Download-MagicPix.zip-blue?style=for-the-badge)](https://github.com/hirusnov/MagicPix/releases/download/v.1.0.0/MagicPix.zip)
+
 Tự động vẽ pixel art vào Primoria pixel editor (Clan Image & Board).
 
-[English version below](#-english) &nbsp;|&nbsp; 🇻🇳 Tiếng Việt bên dưới
+📖 [English version below](#-english) &nbsp;|&nbsp; 🇻🇳 Tiếng Việt bên dưới
 
 ---
 
@@ -18,11 +20,11 @@ Tự động vẽ pixel art vào Primoria pixel editor (Clan Image & Board).
    - **32×32 (Clan, Large Board)** — 60 màu, cho Clan Emblem và bảng lớn
 3. Nhấn **"Tải Ảnh"** để chọn ảnh PNG/JPG.
 4. Dùng **Zoom Ảnh** để phóng to/thu nhỏ vùng muốn chuyển đổi (tuỳ chọn).
-5. Calibrate một lần: nhấn **Calibrate Lưới** → chuyển sang cửa sổ game → di chuột tới từng điểm và giữ yên để ghi nhận.
+5. Calibrate một lần: nhấn **📐 Calibrate Lưới** → chuyển sang cửa sổ game → di chuột tới từng điểm và giữ yên để ghi nhận.
 6. Trong game, mở bảng vẽ pixel editor.
-7. Nhấn **BẮT ĐẦU VẼ** — bạn có vài giây để alt-tab vào game.
+7. Nhấn **▶ BẮT ĐẦU VẼ** — bạn có vài giây để alt-tab vào game.
 
-> **Calibration được tự động lưu.** Chỉ cần làm lại khi đổi độ phân giải màn hình hoặc di chuyển cửa sổ game.
+> 💡 **Calibration được tự động lưu.** Chỉ cần làm lại khi đổi độ phân giải màn hình hoặc di chuyển cửa sổ game.
 
 ---
 
@@ -59,12 +61,12 @@ Công cụ cần biết chính xác vị trí của lưới vẽ và bảng màu
    - **Điểm 1**: Tâm ô **TRÊN-TRÁI** của lưới vẽ (hàng 1, cột 1)
    - **Điểm 2**: Tâm ô **TRÊN-PHẢI** của lưới vẽ (hàng 1, cột cuối)
    - **Điểm 3**: Tâm ô **DƯỚI-TRÁI** của lưới vẽ (hàng cuối, cột 1)
-   - _Cuộn bảng màu lên đầu hoàn toàn trước khi ghi điểm 4–6._
+   - ⚠️ _Cuộn bảng màu lên đầu hoàn toàn trước khi ghi điểm 4–6._
    - **Điểm 4**: Tâm ô màu **Xanh lam nhạt** — Pastel Blue `#9DBAE4` (ô trên cùng bên trái của bảng màu)
    - **Điểm 5**: Tâm ô màu **Vàng kem** — Cream Yellow `#F6D084` (cùng hàng 1, ô ngay bên phải Điểm 4)
    - **Điểm 6**: Tâm ô màu **Hồng phấn nhạt** — Pastel Pink `#F7ABAB` (hàng 2, so le giữa Điểm 4 và 5)
 6. Hộp thoại thành công xuất hiện. **Calibration tự động lưu** — lần sau mở MagicPix sẽ tự tải lại!
-7. Nhấn **Kiểm Tra** để xem con trỏ lướt qua từng điểm và kiểm tra độ chính xác. (Tùy chọn)
+7. Nhấn **🎯 Kiểm Tra** để xem con trỏ lướt qua từng điểm và kiểm tra độ chính xác. (Tùy chọn)
 
 ---
 
@@ -111,7 +113,7 @@ Công cụ cần biết chính xác vị trí của lưới vẽ và bảng màu
 ### Discord
 
 Câu hỏi, góp ý, yêu cầu tính năng?  
-Nhắn trực tiếp cho Hirus: **[discord.com/users/386072981799174144](https://discord.com/users/386072981799174144)**  
+👉 Nhắn trực tiếp cho Hirus: **[discord.com/users/386072981799174144](https://discord.com/users/386072981799174144)**  
 _(hoặc nhấn nút **Discord** trong MagicPix)_
 
 ---
@@ -130,11 +132,11 @@ Auto-paint pixel art into the Primoria pixel editor (Clan Image & Board).
    - **32×32 (Clan, Large Board)** — 60 colors, for Clan Emblems and large boards
 3. Click **"Load Image"** to pick a PNG/JPG file.
 4. Use **Image Zoom** to crop/zoom the area you want to convert (optional).
-5. Calibrate once: click **Calibrate Grid** → switch to game → move mouse to each point and hold still to auto-capture.
+5. Calibrate once: click **📐 Calibrate Grid** → switch to game → move mouse to each point and hold still to auto-capture.
 6. In-game, open the pixel editor board.
-7. Press **START PAINTING** — you have a few seconds to alt-tab into the game.
+7. Press **▶ START PAINTING** — you have a few seconds to alt-tab into the game.
 
-> **Calibration is auto-saved.** You only need to redo it if your screen resolution or game window position changes.
+> 💡 **Calibration is auto-saved.** You only need to redo it if your screen resolution or game window position changes.
 
 ---
 
@@ -162,7 +164,7 @@ Auto-paint pixel art into the Primoria pixel editor (Clan Image & Board).
 The tool needs to know exactly where the pixel grid and palette swatches are on your screen.
 
 1. Open the pixel editor board in-game (Primoria).
-2. Click **Calibrate Grid** in the right panel of MagicPix.
+2. Click **📐 Calibrate Grid** in the right panel of MagicPix.
 3. Switch to the game window.
 4. Move your mouse to each point and hold still for **1.5 seconds** — it captures automatically.
    - _A beep confirms each capture._
@@ -171,12 +173,12 @@ The tool needs to know exactly where the pixel grid and palette swatches are on 
    - **Point 1**: Center of **Top-Left** pixel cell (row 1, col 1 of the drawing grid)
    - **Point 2**: Center of **Top-Right** pixel cell (row 1, last col of the drawing grid)
    - **Point 3**: Center of **Bottom-Left** pixel cell (last row, col 1 of the drawing grid)
-   - _Scroll the palette all the way to the top before capturing points 4–6._
+   - ⚠️ _Scroll the palette all the way to the top before capturing points 4–6._
    - **Point 4**: Center of **Pastel Blue** swatch — `#9DBAE4` (top-left hexagon of the palette)
    - **Point 5**: Center of **Cream Yellow** swatch — `#F6D084` (same top row, directly right of Point 4)
    - **Point 6**: Center of **Pastel Pink** swatch — `#F7ABAB` (row 2, staggered between Point 4 and 5)
 6. A success dialog appears. **Calibration is automatically saved** — it will reload next time you open MagicPix!
-7. Click **Test** to watch the cursor glide through each position and verify accuracy.
+7. Click **🎯 Test** to watch the cursor glide through each position and verify accuracy.
 
 ---
 
