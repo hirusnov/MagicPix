@@ -64,7 +64,7 @@ Công cụ cần biết chính xác vị trí của lưới vẽ và bảng màu
    - **Điểm 5**: Tâm ô màu **Vàng kem** — Cream Yellow `#F6D084` (cùng hàng 1, ô ngay bên phải Điểm 4)
    - **Điểm 6**: Tâm ô màu **Hồng phấn nhạt** — Pastel Pink `#F7ABAB` (hàng 2, so le giữa Điểm 4 và 5)
 6. Hộp thoại thành công xuất hiện. **Calibration tự động lưu** — lần sau mở MagicPix sẽ tự tải lại!
-7. Nhấn **🎯 Kiểm Tra** để xem con trỏ lướt qua từng điểm và kiểm tra độ chính xác. (Tùy chọn)
+7. Nhấn **Kiểm Tra** để xem con trỏ lướt qua từng điểm và kiểm tra độ chính xác. (Tùy chọn)
 
 ---
 
