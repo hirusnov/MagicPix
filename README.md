@@ -17,7 +17,8 @@ Tự động vẽ pixel art vào Primoria pixel editor (Clan Image & Board).
 1. Double-click **`MagicPix.exe`** để khởi động.
 2. Chọn **Loại Lưới** ở panel bên phải:
    - **16×16 (Small Board)** — 20 màu, cho bảng nhỏ
-   - **32×32 (Clan, Large Board)** — 60 màu, cho Clan Emblem và bảng lớn
+   - **32×32 (Large Board)** — 20 màu, cho bảng lớn
+   - **Clan 32×32 (60 Colors)** — 60 màu, cho Clan Emblem
 3. Nhấn **"Tải Ảnh"** để chọn ảnh PNG/JPG.
 4. Dùng **Zoom Ảnh** để phóng to/thu nhỏ vùng muốn chuyển đổi (tuỳ chọn).
 5. Calibrate một lần: nhấn **📐 Calibrate Lưới** → chuyển sang cửa sổ game → di chuột tới từng điểm và giữ yên để ghi nhận.
@@ -33,9 +34,9 @@ Tự động vẽ pixel art vào Primoria pixel editor (Clan Image & Board).
 | Tính năng        | Chi tiết                                                                              |
 | ---------------- | ------------------------------------------------------------------------------------- |
 | Ảnh → Pixel Art  | Chuyển đổi PNG/JPG bằng thuật toán màu sắc **CIEDE2000**                              |
-| Bảng màu game    | **20 màu** cho lưới 16×16, **60 màu** cho lưới 32×32/Clan                             |
+| Bảng màu game    | **20 màu** cho 16×16 & 32×32 Large Board, **60 màu** cho Clan 32×32                   |
 | Zoom Ảnh         | Phóng to/thu nhỏ ảnh gốc trước khi chuyển — **Phóng To / Thu Nhỏ / ↻ Tạo Lại Pixels** |
-| Tự cuộn bảng màu | Auto-painter **tự động cuộn** bảng màu trong game khi dùng 60 màu                     |
+| Tự cuộn bảng màu | Auto-painter **tự động cuộn** bảng màu trong game khi vẽ Clan 60 màu                  |
 | Canvas thủ công  | Vẽ tay bằng công cụ Bút                                                               |
 | Undo / Redo      | 60 cấp hoàn tác (Ctrl+Z / Ctrl+Y)                                                     |
 | Zoom & Pan       | Cuộn chuột để zoom, kéo chuột giữa để pan                                             |
@@ -129,7 +130,8 @@ Auto-paint pixel art into the Primoria pixel editor (Clan Image & Board).
 1. Double-click **`MagicPix.exe`** to launch.
 2. Choose your **Grid Preset** in the right panel:
    - **16×16 (Small Board)** — 20 colors, for small boards
-   - **32×32 (Clan, Large Board)** — 60 colors, for Clan Emblems and large boards
+   - **32×32 (Large Board)** — 20 colors, for large boards
+   - **Clan 32×32 (60 Colors)** — 60 colors, for Clan Emblems
 3. Click **"Load Image"** to pick a PNG/JPG file.
 4. Use **Image Zoom** to crop/zoom the area you want to convert (optional).
 5. Calibrate once: click **📐 Calibrate Grid** → switch to game → move mouse to each point and hold still to auto-capture.
@@ -145,9 +147,9 @@ Auto-paint pixel art into the Primoria pixel editor (Clan Image & Board).
 | Feature             | Details                                                                         |
 | ------------------- | ------------------------------------------------------------------------------- |
 | Image → Pixel Art   | Converts any PNG/JPG using **CIEDE2000** perceptual color matching              |
-| Game Palette        | **20 colors** for 16×16 boards, **60 colors** for 32×32/Clan boards             |
+| Game Palette        | **20 colors** for 16×16 & 32×32 Large Board, **60 colors** for Clan 32×32       |
 | Image Zoom          | Zoom in/out on source image — **Zoom In / Zoom Out / ↻ Re-generate Pixels**     |
-| Auto-Scroll Palette | For 60-color boards, auto-painter **automatically scrolls** the in-game palette |
+| Auto-Scroll Palette | For 60-color Clan boards, auto-painter **automatically scrolls** in-game palette |
 | Manual Canvas       | Draw manually with the Pen tool                                                 |
 | Undo / Redo         | 60-level undo stack (Ctrl+Z / Ctrl+Y)                                           |
 | Zoom & Pan          | Mouse-wheel zoom, middle-click drag                                             |
