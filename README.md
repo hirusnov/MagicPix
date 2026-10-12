@@ -2,230 +2,137 @@
 
 > **Made by Hirus** | [Discord](https://discord.com/users/386072981799174144)
 
-[![Download MagicPix](https://img.shields.io/badge/⬇%EF%B8%8F%20Download-MagicPix.zip-blue?style=for-the-badge)](https://github.com/hirusnov/MagicPix/releases/download/v.1.0.0/MagicPix.zip)
+[![Download MagicPix](https://img.shields.io/badge/Download-MagicPix.zip-blue?style=for-the-badge)](https://github.com/hirusnov/MagicPix/releases/download/v.1.0.0/MagicPix.zip)
 
-Tự động vẽ pixel art vào Primoria pixel editor (Clan Image & Board).
+Vẽ pixel art siêu tốc vào game Primoria thông qua công nghệ Instant Autosave (hoàn tất chỉ trong 1 giây, không cần chuột hay calibrate).
 
-📖 [English version below](#-english) &nbsp;|&nbsp; 🇻🇳 Tiếng Việt bên dưới
-
----
-
-## 🇻🇳 Tiếng Việt
-
-### Hướng Dẫn Nhanh
-
-1. Double-click **`MagicPix.exe`** để khởi động.
-2. Chọn **Loại Lưới** ở panel bên phải:
-   - **16×16 (Small Board)** — 20 màu, cho bảng nhỏ
-   - **32×32 (Large Board)** — 20 màu, cho bảng lớn
-   - **Clan 32×32 (60 Colors)** — 60 màu, cho Clan Emblem
-3. Nhấn **"Tải Ảnh"** để chọn ảnh PNG/JPG.
-4. Dùng **Zoom Ảnh** để phóng to/thu nhỏ vùng muốn chuyển đổi (tuỳ chọn).
-5. Calibrate một lần: nhấn **📐 Calibrate Lưới** → chuyển sang cửa sổ game → di chuột tới từng điểm và giữ yên để ghi nhận.
-6. Trong game, mở bảng vẽ pixel editor.
-7. Nhấn **▶ BẮT ĐẦU VẼ** — bạn có vài giây để alt-tab vào game.
-
-> 💡 **Calibration được tự động lưu.** Chỉ cần làm lại khi đổi độ phân giải màn hình hoặc di chuyển cửa sổ game.
+[English version below](#english) | Tiếng Việt bên dưới
 
 ---
 
-### Tính Năng
+## Tiếng Việt
 
-| Tính năng        | Chi tiết                                                                              |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| Ảnh → Pixel Art  | Chuyển đổi PNG/JPG bằng thuật toán màu sắc **CIEDE2000**                              |
-| Bảng màu game    | **20 màu** cho 16×16 & 32×32 Large Board, **60 màu** cho Clan 32×32                   |
-| Zoom Ảnh         | Phóng to/thu nhỏ ảnh gốc trước khi chuyển — **Phóng To / Thu Nhỏ / ↻ Tạo Lại Pixels** |
-| Tự cuộn bảng màu | Auto-painter **tự động cuộn** bảng màu trong game khi vẽ Clan 60 màu                  |
-| Canvas thủ công  | Vẽ tay bằng công cụ Bút                                                               |
-| Undo / Redo      | 60 cấp hoàn tác (Ctrl+Z / Ctrl+Y)                                                     |
-| Zoom & Pan       | Cuộn chuột để zoom, kéo chuột giữa để pan                                             |
-| Tự động vẽ       | Click từng ô tự động, gộp theo nhóm màu                                               |
-| Calibration      | Di chuột tới từng điểm và giữ yên 1.5s, **tự động lưu theo preset**                  |
-| Lưu / Mở         | File `.mp` dự án (JSON)                                                               |
-| Xuất PNG         | Xuất preview pixel ra PNG                                                             |
-| Đa ngôn ngữ      | Chuyển **English / Tiếng Việt** bằng nút 🌐                                           |
+### Hướng Dẫn Sử Dụng (Nhanh Gọn)
 
----
+> **Điểm nổi bật**: MagicPix là ứng dụng chạy **độc lập (standalone)**, bạn có thể giải nén và chạy `MagicPix.exe` ở **bất kỳ đâu** (Desktop, Downloads, thư mục tùy chọn). Toàn bộ các file save vẽ trong game sẽ **nằm ngay tại thư mục chứa MagicPix** và tự động đồng bộ hai chiều với game!
 
-### Calibration (Một lần mỗi độ phân giải)
+1. **Khởi động MagicPix**: Mở **MagicPix.exe**.
+2. **Chọn Thư Mục Game**: Tại mục **THƯ MỤC GAME**, nhấn **📁 Chọn…** và trỏ đến thư mục cài đặt game Primoria (nơi có file `Primoria.exe`). MagicPix sẽ tự động lưu lại đường dẫn này cho các lần chạy sau.
+3. **Tải ảnh hoặc vẽ tranh**:
+   - Nhấn **Tải Ảnh** để chọn bất kỳ ảnh PNG/JPG nào (tự động khớp màu CIEDE2000 chuẩn 60 màu).
+   - Dùng **Zoom Ảnh** để phóng to/thu nhỏ vùng cần lấy, sau đó nhấn **Tạo Lại Pixels**.
+4. **Nhận diện và Dán vào game**:
+   - Mở bảng vẽ trong game (Pixel Editor) hoặc nhấn **➕ Tạo Bản Vẽ Mới (Save Mới)** trực tiếp trên MagicPix.
+   - MagicPix **tự động phát hiện** bảng vẽ mới (đánh dấu [MỚI]) và tự đồng bộ kích thước lưới (**16x16** hoặc **32x32**).
+   - Nhấn **DÁN VÀO GAME (1 Giây)**.
+5. **Xem kết quả**: Mở lại bảng vẽ trong game (hoặc chuyển tab tranh) — tác phẩm xuất hiện ngay lập tức 100% chuẩn xác.
 
-Công cụ cần biết chính xác vị trí của lưới vẽ và bảng màu trên màn hình.
-
-1. Mở bảng vẽ pixel editor trong game Primoria.
-2. Nhấn **📐 Calibrate Lưới** ở panel bên phải của MagicPix.
-3. Chuyển sang cửa sổ game.
-4. Di chuột tới từng điểm, giữ chuột **yên 1.5 giây** — sẽ tự động ghi nhận.
-   - _Tiếng BEEP xác nhận điểm đã được ghi._
-   - _Không cần nhấn bất kỳ phím nào._
-5. Ghi nhận 6 điểm theo thứ tự:
-   - **Điểm 1**: Tâm ô **TRÊN-TRÁI** của lưới vẽ (hàng 1, cột 1)
-   - **Điểm 2**: Tâm ô **TRÊN-PHẢI** của lưới vẽ (hàng 1, cột cuối)
-   - **Điểm 3**: Tâm ô **DƯỚI-TRÁI** của lưới vẽ (hàng cuối, cột 1)
-   - ⚠️ _Cuộn bảng màu lên đầu hoàn toàn trước khi ghi điểm 4–6._
-   - **Điểm 4**: Tâm ô màu **Xanh lam nhạt** — Pastel Blue `#9DBAE4` (ô trên cùng bên trái của bảng màu)
-   - **Điểm 5**: Tâm ô màu **Vàng kem** — Cream Yellow `#F6D084` (cùng hàng 1, ô ngay bên phải Điểm 4)
-   - **Điểm 6**: Tâm ô màu **Hồng phấn nhạt** — Pastel Pink `#F7ABAB` (hàng 2, so le giữa Điểm 4 và 5)
-6. Hộp thoại thành công xuất hiện. **Calibration tự động lưu** — lần sau mở MagicPix sẽ tự tải lại!
-7. Nhấn **🎯 Kiểm Tra** để xem con trỏ lướt qua từng điểm và kiểm tra độ chính xác. (Tùy chọn)
+> **Lưu ý**: Các file save bản vẽ nằm ngay trong thư mục chứa `MagicPix.exe`. Bạn có thể sao lưu, chia sẻ file save với bạn bè rất dễ dàng! Bạn cũng có thể bấm **Đọc Tranh từ Game** để kéo bức vẽ đang có vào MagicPix để chỉnh sửa hoặc xuất ra PNG.
 
 ---
 
-### Cài Đặt Vẽ
+### Tính Năng Chính
 
-| Cài đặt               | Mô tả                                                                                                           |
-| --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Loại Lưới**         | 16×16 (20 màu) hoặc 32×32 (60 màu)                                                                              |
-| **Tốc độ (ms/ô)**     | Thời gian chờ giữa các click. 40ms là an toàn; thấp hơn = nhanh hơn                                             |
-| **Thứ Tự Vẽ**         | **Nhóm Màu** (tốt nhất) — vẽ hết tất cả ô cùng màu trước. **Theo Hàng** — vẽ từ trái sang phải, trên xuống dưới |
-| **Bỏ qua màu nền**    | Bỏ qua màu nền (tự phát hiện từ 4 góc canvas)                                                                   |
-| **Cuộn Bảng 32×32**   | **Tự kéo** — tự động drag cuộn bảng màu; **Không cuộn** — bỏ qua bước cuộn             |
-| **Dither khi tải**    | Bật dithering Floyd-Steinberg khi chuyển đổi ảnh                                                                |
-| **Màu sắc sống động** | Tăng độ bão hòa & tương phản (phù hợp ảnh thật)                                                                 |
-| **Đếm ngược (giây)**  | Thời gian chờ trước khi vẽ — dùng để kịp alt-tab vào game                                                       |
+| Tính năng | Chi tiết |
+| --- | --- |
+| **Instant Save** | Ghi thẳng vào file autosave của game trong ~0.01 giây — **không cần di chuột, không delay, 0% lỗi click** |
+| **Auto-Detect** | Tự động phát hiện khi bạn vừa mở bảng vẽ mới trong game và tự chọn ngay file đó |
+| **Bảng màu 60 màu** | Hỗ trợ trọn vẹn **60 màu** cho cả hai loại lưới **16x16** và **32x32** |
+| **Ảnh -> Pixel Art** | Thuật toán so khớp màu tri giác **CIEDE2000** chuẩn xác nhất |
+| **Zoom & Crop Ảnh** | Phóng to/thu nhỏ chủ thể ảnh gốc trước khi chuyển đổi pixel |
+| **Tùy chọn xử lý ảnh** | Bỏ qua màu nền, Dither Floyd-Steinberg, Màu sắc sống động (Vibrant mode), Cắt xén giữ tỷ lệ |
+| **Panel công cụ** | Bút vẽ (Pen - ✏), Tẩy xóa từng ô (Eraser - ⌫), Hoàn tác (Undo - ↩), Làm lại (Redo - ↪), Xóa toàn bộ canvas (🗑) |
+| **Undo / Redo** | 60 cấp hoàn tác (Ctrl+Z / Ctrl+Y) |
+| **Lưu & Xuất** | Lưu dự án .mp (JSON) hoặc **Xuất PNG** sắc nét |
+| **Đa ngôn ngữ** | Chuyển đổi linh hoạt **Tiếng Việt / English** |
 
 ---
 
 ### Phím Tắt
 
-| Phím              | Tác dụng                                  |
-| ----------------- | ----------------------------------------- |
-| `Ctrl+Z`          | Hoàn tác                                  |
-| `Ctrl+Y`          | Làm lại                                   |
-| `Ctrl+S`          | Lưu dự án                                 |
-| `Ctrl+O`          | Mở dự án                                  |
-| Cuộn chuột        | Zoom canvas  |
-| Kéo chuột giữa    | Pan canvas   |
-| Click chuột phải  | Hút màu từ ô |
+| Phím | Tác dụng |
+| --- | --- |
+| B / P | Chọn Bút vẽ (Pen) |
+| E | Chọn Tẩy xóa từng ô (Eraser) |
+| Shift + Click/Kéo | Tẩy xóa ô nhanh khi đang dùng Bút |
+| Ctrl+Z | Hoàn tác |
+| Ctrl+Y | Làm lại |
+| Ctrl+S | Lưu dự án (.mp) |
+| Ctrl+O | Mở dự án (.mp) |
+| Cuộn chuột | Zoom canvas |
+| Kéo chuột giữa | Pan / Di chuyển canvas |
+| Click chuột phải | Hút màu từ ô (hoặc xóa ô khi đang bật Tẩy) |
 
 ---
 
-### Mẹo Hay
+### Discord & Hỗ Trợ
 
-- **Alt-tab kịp thời**: Tăng Đếm ngược lên 4–5 giây nếu cần thêm thời gian.
-- **Click bị bỏ sót**: Tăng ms/ô (ví dụ lên 60–80ms) nếu game không nhận đủ click.
-- **Dừng khẩn cấp**: Di chuột đến **góc trên-trái màn hình** để dừng ngay lập tức.
-- **Bảng 60 màu**: Auto-painter tự cuộn qua 3 phần — Trên (0–19), Giữa (20–39), Dưới (40–59).
-- **Zoom Ảnh**: Phóng to vào mặt/nhân vật, sau đó nhấn **↻ Tạo Lại Pixels** — không cần tải ảnh lại.
-- **Xuất ảnh preview**: Nhấn **Xuất PNG** để lưu ảnh pixel art hiện tại ra file.
-
----
-
-### Discord
-
-Câu hỏi, góp ý, yêu cầu tính năng?  
-👉 Nhắn trực tiếp cho Hirus: **[discord.com/users/386072981799174144](https://discord.com/users/386072981799174144)**  
-_(hoặc nhấn nút **Discord** trong MagicPix)_
+Câu hỏi, góp ý hoặc yêu cầu tính năng mới:  
+Nhắn trực tiếp cho Hirus: **[discord.com/users/386072981799174144](https://discord.com/users/386072981799174144)**  
+*(hoặc nhấn nút Discord trên thanh tiêu đề MagicPix)*
 
 ---
 
 ---
 
-## 🇬🇧 English
+## English
 
-Auto-paint pixel art into the Primoria pixel editor (Clan Image & Board).
+Ultra-fast pixel art injection for Primoria via **Instant Autosave Inject** (complete in 1 second, zero mouse movement, no calibration needed).
 
 ### Quick Start
 
-1. Double-click **`MagicPix.exe`** to launch.
-2. Choose your **Grid Preset** in the right panel:
-   - **16×16 (Small Board)** — 20 colors, for small boards
-   - **32×32 (Large Board)** — 20 colors, for large boards
-   - **Clan 32×32 (60 Colors)** — 60 colors, for Clan Emblems
-3. Click **"Load Image"** to pick a PNG/JPG file.
-4. Use **Image Zoom** to crop/zoom the area you want to convert (optional).
-5. Calibrate once: click **📐 Calibrate Grid** → switch to game → move mouse to each point and hold still to auto-capture.
-6. In-game, open the pixel editor board.
-7. Press **▶ START PAINTING** — you have a few seconds to alt-tab into the game.
+> **Key Highlight**: MagicPix runs **standalone anywhere** (Desktop, Downloads, any folder). You can send `MagicPix.exe` to anyone. All drawing save files created in game will **physically reside right in the folder where MagicPix is located**, seamlessly synchronized with the game!
 
-> 💡 **Calibration is auto-saved.** You only need to redo it if your screen resolution or game window position changes.
+1. **Launch MagicPix**: Run **MagicPix.exe**.
+2. **Select Game Folder**: Under **GAME FOLDER**, click **📁 Select…** and pick your Primoria installation folder (where `Primoria.exe` is located). MagicPix remembers this setting automatically.
+3. **Load artwork**:
+   - Click **Load Image** to import any PNG/JPG image (perceptual CIEDE2000 60-color matching).
+   - Use **Image Zoom** to crop/focus on your subject, then click **Re-generate Pixels**.
+4. **Detect & Apply**:
+   - Open the drawing board in-game or click **➕ Save as New Canvas** directly in MagicPix.
+   - MagicPix **automatically detects** the new canvas (marked [NEW]) and auto-syncs your grid dimensions (**16x16** or **32x32**).
+   - Click **INJECT INTO GAME (1 Sec)**.
+5. **Done**: Re-open the drawing board in-game — your artwork appears instantly with 100% precision.
 
----
-
-### Features
-
-| Feature             | Details                                                                         |
-| ------------------- | ------------------------------------------------------------------------------- |
-| Image → Pixel Art   | Converts any PNG/JPG using **CIEDE2000** perceptual color matching              |
-| Game Palette        | **20 colors** for 16×16 & 32×32 Large Board, **60 colors** for Clan 32×32       |
-| Image Zoom          | Zoom in/out on source image — **Zoom In / Zoom Out / ↻ Re-generate Pixels**     |
-| Auto-Scroll Palette | For 60-color Clan boards, auto-painter **automatically scrolls** in-game palette |
-| Manual Canvas       | Draw manually with the Pen tool                                                 |
-| Undo / Redo         | 60-level undo stack (Ctrl+Z / Ctrl+Y)                                           |
-| Zoom & Pan          | Mouse-wheel zoom, middle-click drag                                             |
-| Auto-Painter        | Clicks every cell automatically, batched by color group                         |
-| Calibration         | Hold mouse still at each point for 1.5s, **auto-saved per preset**              |
-| Save / Load         | `.mp` project files (JSON)                                                      |
-| Export PNG          | Export the pixel preview as a PNG image                                         |
-| Bilingual UI        | Switch between **English** and **Tiếng Việt** via the 🌐 button                 |
+> **Note**: Canvas save files reside directly inside the folder containing `MagicPix.exe` for easy backup and sharing. You can also click **Load from Game** to import an existing in-game canvas into MagicPix for editing or exporting to PNG.
 
 ---
 
-### Calibration (Once per resolution)
+### Key Features
 
-The tool needs to know exactly where the pixel grid and palette swatches are on your screen.
-
-1. Open the pixel editor board in-game (Primoria).
-2. Click **📐 Calibrate Grid** in the right panel of MagicPix.
-3. Switch to the game window.
-4. Move your mouse to each point and hold still for **1.5 seconds** — it captures automatically.
-   - _A beep confirms each capture._
-   - _No key press needed._
-5. Record 6 points in order:
-   - **Point 1**: Center of **Top-Left** pixel cell (row 1, col 1 of the drawing grid)
-   - **Point 2**: Center of **Top-Right** pixel cell (row 1, last col of the drawing grid)
-   - **Point 3**: Center of **Bottom-Left** pixel cell (last row, col 1 of the drawing grid)
-   - ⚠️ _Scroll the palette all the way to the top before capturing points 4–6._
-   - **Point 4**: Center of **Pastel Blue** swatch — `#9DBAE4` (top-left hexagon of the palette)
-   - **Point 5**: Center of **Cream Yellow** swatch — `#F6D084` (same top row, directly right of Point 4)
-   - **Point 6**: Center of **Pastel Pink** swatch — `#F7ABAB` (row 2, staggered between Point 4 and 5)
-6. A success dialog appears. **Calibration is automatically saved** — it will reload next time you open MagicPix!
-7. Click **🎯 Test** to watch the cursor glide through each position and verify accuracy.
-
----
-
-### Paint Settings
-
-| Setting             | Description                                                                         |
-| ------------------- | ----------------------------------------------------------------------------------- |
-| **Grid Preset**     | 16×16 (20 colors) or 32×32 (60 colors)                                              |
-| **Speed (ms/cell)** | Delay between clicks. 40ms is safe; lower = faster                                  |
-| **Paint Order**     | **Color Group** (best) — all same-color cells first. **Scanline** — row by row      |
-| **Skip background** | Skip the background color (auto-detected from canvas corners)                       |
-| **32×32 Scroll**    | **Auto Drag** — automatically drags to scroll the palette; **None** — skip scrolling |
-| **Dither on load**  | Floyd-Steinberg dithering when converting image                                     |
-| **Vibrant colors**  | Boost saturation/contrast for photos                                                |
-| **Warmup (s)**      | Seconds before painting starts — time to alt-tab into the game                      |
+| Feature | Details |
+| --- | --- |
+| **Instant Save Inject** | Directly writes to the game save in ~0.01s — **no mouse clicks, zero delay, 0% misclick** |
+| **Auto-Detect** | Automatically detects newly opened in-game canvases and selects them immediately |
+| **60-Color Palette** | Full **60-color palette** supported for both **16x16** and **32x32** grids |
+| **Image -> Pixel Art** | Perceptual **CIEDE2000** color matching for highest artistic fidelity |
+| **Image Zoom & Crop** | Zoom in/out on source image before converting pixels |
+| **Image Options** | Skip background, Floyd-Steinberg dithering, Vibrant mode, Crop aspect ratio |
+| **Toolbar** | Pen tool (✏), Cell Eraser (⌫), Undo (↩), Redo (↪), Clear canvas (🗑) |
+| **Undo / Redo** | 60-level undo stack (Ctrl+Z / Ctrl+Y) |
+| **Save & Export** | Project files (.mp) and clean PNG export |
+| **Bilingual UI** | Switch between **English** and **Tiếng Việt** |
 
 ---
 
 ### Keyboard Shortcuts
 
-| Key               | Action                               |
-| ----------------- | ------------------------------------ |
-| `Ctrl+Z`          | Undo                                 |
-| `Ctrl+Y`          | Redo                                 |
-| `Ctrl+S`          | Save project                         |
-| `Ctrl+O`          | Load project                         |
-| Mouse-wheel       | Zoom canvas             |
-| Middle-drag       | Pan canvas              |
-| Right-click       | Eyedrop color from cell |
+| Key | Action |
+| --- | --- |
+| B / P | Select Pen tool |
+| E | Select Cell Eraser tool |
+| Shift + Click/Drag | Quick erase while using Pen |
+| Ctrl+Z | Undo |
+| Ctrl+Y | Redo |
+| Ctrl+S | Save project (.mp) |
+| Ctrl+O | Load project (.mp) |
+| Mouse-wheel | Zoom canvas |
+| Middle-drag | Pan canvas |
+| Right-click | Pick color from cell (or erase if Eraser tool active) |
 
 ---
 
-### Tips
+### Discord & Support
 
-- **Alt-tab timing**: Set Warmup to 4–5s if you need more time to switch windows.
-- **Missed clicks**: Increase ms/cell (e.g. 60–80ms) if the game misses clicks.
-- **Emergency stop**: Move mouse to the **top-left corner** of the screen to abort immediately.
-- **60-color board**: The auto-painter scrolls through 3 palette sections — Top (0–19), Middle (20–39), Bottom (40–59).
-- **Image Zoom**: Zoom into a face or subject, then click **↻ Re-generate Pixels** — no need to reload the image.
-- **Export preview**: Click **Export PNG** to save the current pixel art as an image file.
-
----
-
-### Discord
-
-Questions, suggestions, or feature requests?  
-👉 Message Hirus directly: **[discord.com/users/386072981799174144](https://discord.com/users/386072981799174144)**  
-_(or click the **Discord** button inside MagicPix)_
+Questions, feedback, or feature requests?  
+Message Hirus directly: **[discord.com/users/386072981799174144](https://discord.com/users/386072981799174144)**
