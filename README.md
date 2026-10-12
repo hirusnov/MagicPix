@@ -22,7 +22,7 @@ Vẽ pixel art siêu tốc vào game Primoria thông qua công nghệ Instant Au
    - Nhấn **Tải Ảnh** để chọn bất kỳ ảnh PNG/JPG nào (tự động khớp màu CIEDE2000 chuẩn 60 màu).
    - Dùng **Zoom Ảnh** để phóng to/thu nhỏ vùng cần lấy, sau đó nhấn **Tạo Lại Pixels**.
 4. **Nhận diện và Dán vào game**:
-   - Mở bảng vẽ trong game (Pixel Editor) hoặc nhấn **➕ Tạo Bản Vẽ Mới (Save Mới)** trực tiếp trên MagicPix.
+   - Mở bảng vẽ trong game và vẽ 1 ô bất kỳ để hệ thống lưu lại bản vẽ tạm.
    - MagicPix **tự động phát hiện** bảng vẽ mới (đánh dấu [MỚI]) và tự đồng bộ kích thước lưới (**16x16** hoặc **32x32**).
    - Nhấn **DÁN VÀO GAME (1 Giây)**.
 5. **Xem kết quả**: Mở lại bảng vẽ trong game (hoặc chuyển tab tranh) — tác phẩm xuất hiện ngay lập tức 100% chuẩn xác.
@@ -89,7 +89,7 @@ Ultra-fast pixel art injection for Primoria via **Instant Autosave Inject** (com
    - Click **Load Image** to import any PNG/JPG image (perceptual CIEDE2000 60-color matching).
    - Use **Image Zoom** to crop/focus on your subject, then click **Re-generate Pixels**.
 4. **Detect & Apply**:
-   - Open the drawing board in-game or click **➕ Save as New Canvas** directly in MagicPix.
+   - Open the drawing board in-game and then draw a pixel.
    - MagicPix **automatically detects** the new canvas (marked [NEW]) and auto-syncs your grid dimensions (**16x16** or **32x32**).
    - Click **INJECT INTO GAME (1 Sec)**.
 5. **Done**: Re-open the drawing board in-game — your artwork appears instantly with 100% precision.
